@@ -10,6 +10,7 @@ namespace AppExercBusinessAccount
     {
         static void Main(string[] args)
         {
+            /* Exemplo
             //BusinessAccount account = new BusinessAccount(8010, "Braian Lemos", 100.00,500);
             //Console.WriteLine(account.Balance);
             //Console.ReadLine();
@@ -50,6 +51,19 @@ namespace AppExercBusinessAccount
                 acc5.UpdateBalance();
                 Console.WriteLine("Update!");
             }
+
+            Fim Exemplo.
+            */
+
+            Account acc1 = new Account(1001,"Sabrina",500.0);
+            Account acc2 = new SavingsAccount(1002, "Sarah", 500.0, 0.01);
+
+            acc1.WithDraw(10.0);
+            acc2.WithDraw(10.0);
+
+            Console.WriteLine(acc1.Balance);
+            Console.WriteLine(acc2.Balance);
+            
             Console.ReadLine();
             
         }
